@@ -6,6 +6,8 @@ class objeto
 {
 public:
     objeto();
+    vector<face> faces;
+
 };
 
 #endif // OBJETO_H

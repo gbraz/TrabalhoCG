@@ -5,15 +5,15 @@
 #include "iluminacao.h"
 #include "camera.h"
 
-class cena
+class Cena
 {
     void carregarCena(std::string);
 
 public:
-    cena();
-    vector<objeto> objetos;
-    iluminacao fonteDeLuz;
-    camera cameraCena;
+    Cena();
+    vector<Objeto> objetos;
+    Iluminacao fonteDeLuz;
+    Camera cameraCena;
 };
 
 #endif // CENA_H

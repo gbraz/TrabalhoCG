@@ -1,11 +1,11 @@
-#include "cena.h"
+#include "Cena.h"
 
-cena::cena()
+Cena::Cena()
 {
     carregarCena("./");
 }
 
-cena::carregarCena(std::string endereco){
+Cena::carregarCena(std::string endereco){
 
 }
 

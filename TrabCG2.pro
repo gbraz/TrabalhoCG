@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
+    face.cpp \
     objeto.cpp \
     cena.cpp
 
 HEADERS  += mainwindow.h \
+    face.h \
     objeto.h \
     cena.h
 

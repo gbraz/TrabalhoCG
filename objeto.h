@@ -2,11 +2,13 @@
 #define OBJETO_H
 
 
-class objeto
+class Objeto
 {
+    std::string nome;
+
 public:
-    objeto();
-    vector<face> faces;
+    Objeto();
+    vector<Face> faces;
 
 };
 

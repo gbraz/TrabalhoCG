@@ -1,6 +1,6 @@
 #include "objeto.h"
 
-objeto::objeto()
+Objeto::Objeto()
 {
 
 }

@@ -17,12 +17,14 @@ SOURCES += main.cpp\
     face.cpp \
     objeto.cpp \
     cena.cpp \
-    vertice.cpp
+    cubo.cpp \
+    aresta.cpp
 
 HEADERS  += mainwindow.h \
     face.h \
     objeto.h \
     cena.h \
-    vertice.h
+    cubo.h \
+    aresta.h
 
 FORMS    += mainwindow.ui

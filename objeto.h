@@ -1,6 +1,10 @@
 #ifndef OBJETO_H
 #define OBJETO_H
 
+#include <string>
+#include <vector>
+#include <face.h>
+
 
 class Objeto
 {
@@ -8,7 +12,7 @@ class Objeto
 
 public:
     Objeto();
-    vector<Face> faces;
+    std::vector<Face> faces;
 
 };
 

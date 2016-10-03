@@ -5,7 +5,7 @@ Cena::Cena()
     carregarCena("./");
 }
 
-Cena::carregarCena(std::string endereco){
+void Cena::carregarCena(std::string endereco){
 
 }
 

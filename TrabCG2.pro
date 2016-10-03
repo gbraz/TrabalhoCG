@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     cena.cpp \
     cubo.cpp \
     aresta.cpp \
-    matriz.cpp
+    matriz.cpp \
+    transformacoes.cpp
 
 HEADERS  += mainwindow.h \
     face.h \
@@ -27,6 +28,7 @@ HEADERS  += mainwindow.h \
     cena.h \
     cubo.h \
     aresta.h \
-    matriz.h
+    matriz.h \
+    transformacoes.h
 
 FORMS    += mainwindow.ui

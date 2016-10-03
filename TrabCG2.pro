@@ -18,13 +18,15 @@ SOURCES += main.cpp\
     objeto.cpp \
     cena.cpp \
     cubo.cpp \
-    aresta.cpp
+    aresta.cpp \
+    matriz.cpp
 
 HEADERS  += mainwindow.h \
     face.h \
     objeto.h \
     cena.h \
     cubo.h \
-    aresta.h
+    aresta.h \
+    matriz.h
 
 FORMS    += mainwindow.ui

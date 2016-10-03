@@ -114,5 +114,19 @@ Cubo::Cubo()
             f11(v4, v8, v7),
             f12(v4, v7, v3);
 
+    ListaDeFaces.push_back(f1);
+    ListaDeFaces.push_back(f2);
+    ListaDeFaces.push_back(f3);
+    ListaDeFaces.push_back(f4);
+    ListaDeFaces.push_back(f5);
+    ListaDeFaces.push_back(f6);
+    ListaDeFaces.push_back(f7);
+    ListaDeFaces.push_back(f8);
+    ListaDeFaces.push_back(f9);
+    ListaDeFaces.push_back(f10);
+    ListaDeFaces.push_back(f11);
+    ListaDeFaces.push_back(f12);
+
+
 
 }

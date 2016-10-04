@@ -58,3 +58,20 @@ std::vector< std::vector<double> > Transformacoes::rotacaoX(double angulo){
     return matRot;
 }
 
+std::vector< std::vector<double> > Transformacoes::rotacaoY(double angulo){
+    std::vector< std::vector<double> > matRot;
+
+    angulo = angulo*(PI/180);
+
+    matRot.resize(4);
+    for(int i = 0; i < 4; i++)
+        matRot[i].resize(4);
+
+    matRot[1][1] = matRot[3][3] = 1;
+    matRot[0][0] = cos(angulo);
+    matRot[2][0] = -sin(angulo);
+    matRot[0][2] = sin(angulo);
+    matRot[2][2] = cos(angulo);
+
+    return matRot;
+}

@@ -13,6 +13,7 @@ public:
     std::vector< std::vector<double> > escala(double, double, double);
     std::vector< std::vector<double> > translacao(double, double, double);
     std::vector< std::vector<double> > rotacaoX(double);
+    std::vector< std::vector<double> > rotacaoY(double);
 };
 
 #endif // TRANSFORMACOES_H

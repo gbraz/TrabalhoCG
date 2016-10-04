@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     Transformacoes trans;
     Matriz mat;
 
+    // ** Tarefa 1 **
 
     //Tampo da Mesa
     std::vector< std::vector<double> > transfMesa;
@@ -47,7 +48,11 @@ int main(int argc, char *argv[])
         c5.ListaDeVertices[i] = mat.produtoMatrizVetor(trans.translacao(215, 0, 117), c5.ListaDeVertices[i]);
 
 
+    // ** Tarefa 2 **
 
+    std::vector< std::vector<double> > transfCentro;
+
+    transfCentro = mat.produto(trans.rotacaoY(-30), trans.translacao(-110, 0, -60));
 
 
     return a.exec();

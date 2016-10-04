@@ -68,6 +68,10 @@ int main(int argc, char *argv[])
     // ** Tarefa 4 **
 
     gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c1, luz);
+    gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c2, luz);
+    gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c3, luz);
+    gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c4, luz);
+    gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c5, luz);
 
 
 

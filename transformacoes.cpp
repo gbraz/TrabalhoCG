@@ -43,6 +43,8 @@ std::vector< std::vector<double> > Transformacoes::translacao(double x, double y
 std::vector< std::vector<double> > Transformacoes::rotacaoX(double angulo){
     std::vector< std::vector<double> > matRot;
 
+    angulo = angulo*(PI/180);
+
     matRot.resize(4);
     for(int i = 0; i < 4; i++)
         matRot[i].resize(4);

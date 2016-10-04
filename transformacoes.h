@@ -1,5 +1,6 @@
 #ifndef TRANSFORMACOES_H
 #define TRANSFORMACOES_H
+#define PI 3.14159265
 
 #include <vector>
 #include <math.h>

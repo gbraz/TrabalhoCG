@@ -21,3 +21,13 @@ std::vector< std::vector<double> > Matriz::produto(std::vector< std::vector<doub
 
     return resultado;
 }
+
+std::vector<double> Matriz::produtoMatrizVetor(std::vector< std::vector<double> > matriz, std::vector<double> vetor){
+    std::vector<double> resultado(4, 0);
+
+    for(int i = 0; i < matriz.size(); i++)
+        for(int j = 0; j < vetor.size(); j++)
+            resultado[i] = matriz[i][j]*vetor[j] + resultado[i];
+
+    return resultado;
+}

@@ -28,10 +28,12 @@ int main(int argc, char *argv[])
 
     //Pés da Mesa
     std::vector< std::vector<double> > transfPe;
+
     transfPe = mat.produto(trans.escala(110, 60, 1.5), trans.translacao(1, 1, 1));
     transfPe = mat.produto(trans.rotacaoX(90), transfPe);
     transfPe = mat.produto(trans.translacao(0, 72, 0), transfPe);
-    for(int i = 0; i < c1.ListaDeVertices.size(); i++){
+
+    for(int i = 0; i < c2.ListaDeVertices.size(); i++){
         c2.ListaDeVertices[i] = mat.produtoMatrizVetor(transfPe, c2.ListaDeVertices[i]);
         c3.ListaDeVertices[i] = mat.produtoMatrizVetor(transfPe, c3.ListaDeVertices[i]);
         c4.ListaDeVertices[i] = mat.produtoMatrizVetor(transfPe, c4.ListaDeVertices[i]);
@@ -53,6 +55,24 @@ int main(int argc, char *argv[])
     std::vector< std::vector<double> > transfCentro;
 
     transfCentro = mat.produto(trans.rotacaoY(-30), trans.translacao(-110, 0, -60));
+    transfCentro = mat.produto(trans.translacao(50, 0, 25), transfCentro);
+
+    for(int i = 0; i < c1.ListaDeVertices.size(); i++){
+        c1.ListaDeVertices[i] = mat.produtoMatrizVetor(transfCentro, c1.ListaDeVertices[i]);
+        c2.ListaDeVertices[i] = mat.produtoMatrizVetor(transfCentro, c2.ListaDeVertices[i]);
+        c3.ListaDeVertices[i] = mat.produtoMatrizVetor(transfCentro, c3.ListaDeVertices[i]);
+        c4.ListaDeVertices[i] = mat.produtoMatrizVetor(transfCentro, c4.ListaDeVertices[i]);
+        c5.ListaDeVertices[i] = mat.produtoMatrizVetor(transfCentro, c5.ListaDeVertices[i]);
+    }
+
+    // ** Tarefa 4 **
+
+    gerarImagem(500, 500, 140, 140, 70, ListaDeFaces c1, luz);
+
+
+
+
+ }
 
 
     return a.exec();
